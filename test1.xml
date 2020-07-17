@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persons>
+    <person>
+        <name>Aleg</name>
+        <birthday>2000-01-25</birthday>
+    </person>
+    <person>
+        <name>Ivgeny</name>
+        <birthday>1985-04-13</birthday>
+        <hobbyes>
+            <hobby>
+                <hobby_name>fishing</hobby_name>
+                <complexity>30</complexity>
+            </hobby>
+            <hobby>
+                <hobby_name>coocing</hobby_name>
+                <complexity>70</complexity>
+            </hobby>
+        </hobbyes>
+    </person>
+</persons>
