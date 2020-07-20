@@ -29,7 +29,7 @@ public class Person {
     private Date birthday;
 
     @OneToMany(mappedBy = "person", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    private List<Hobby> hobbyes = null;
+    private List<Hobby> hobbyes = new ArrayList<>();
 
     public Person(){}
 
@@ -48,12 +48,7 @@ public class Person {
     }
 
     public void addHobby(String name, int complexity){
-        if (hobbyes == null){
-            hobbyes = new ArrayList<>();
-            hobbyes.add(new Hobby(name, complexity));
-        }else{
-            hobbyes.add(new Hobby(name, complexity));
-        }
+        hobbyes.add(new Hobby(name, complexity));
     }
 
     public String getName() {
